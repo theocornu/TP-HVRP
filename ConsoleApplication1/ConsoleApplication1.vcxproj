@@ -156,17 +156,10 @@
     <ClCompile Include="HVRP.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="HVRP13.txt" />
-    <Text Include="HVRP14.txt" />
-    <Text Include="HVRP15.txt" />
-    <Text Include="HVRP16.txt" />
-    <Text Include="HVRP17.txt" />
-    <Text Include="HVRP18.txt" />
-    <Text Include="HVRP19.txt" />
-    <Text Include="HVRP20.txt" />
+    <ClInclude Include="HVRP.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="HVRP.h" />
+    <Text Include="HVRP_DLP_05.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

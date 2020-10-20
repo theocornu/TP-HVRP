@@ -23,34 +23,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="HVRP13.txt">
-      <Filter>Fichiers de ressources</Filter>
-    </Text>
-    <Text Include="HVRP14.txt">
-      <Filter>Fichiers de ressources</Filter>
-    </Text>
-    <Text Include="HVRP15.txt">
-      <Filter>Fichiers de ressources</Filter>
-    </Text>
-    <Text Include="HVRP16.txt">
-      <Filter>Fichiers de ressources</Filter>
-    </Text>
-    <Text Include="HVRP17.txt">
-      <Filter>Fichiers de ressources</Filter>
-    </Text>
-    <Text Include="HVRP18.txt">
-      <Filter>Fichiers de ressources</Filter>
-    </Text>
-    <Text Include="HVRP19.txt">
-      <Filter>Fichiers de ressources</Filter>
-    </Text>
-    <Text Include="HVRP20.txt">
-      <Filter>Fichiers de ressources</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="HVRP.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="HVRP_DLP_05.txt">
+      <Filter>Fichiers de ressources</Filter>
+    </Text>
   </ItemGroup>
 </Project>

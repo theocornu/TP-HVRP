@@ -1,28 +1,30 @@
 #pragma once
 
-static const int NBMAX_TOURNEE = 20;
-static const int NBMAX_SOMMET = 50;
+static const int NBMAX_TYPE = 10;
+static const int NBMAX_CLIENT = 500;
+static const int NBMAX_CLIENT_PAR_TOURNEE = 20;
 
 typedef struct t_instance {
-	int nbNoeud;
-	int nbTournee;
-	double d[][];
-	int nb[NBMAX_TOURNEE+1];
-	int capa[NBMAX_TOURNEE+1];
-	double CF[]; // cout fixe
-	double CV[]; // cout variable
+	int nbClient; // nombre de clients
+	int nbType; // nombre de types de véhicule
+	double dist[NBMAX_CLIENT+1][NBMAX_CLIENT+1]; // distance de entre clients (i vers j)
+	int nb[NBMAX_TYPE+1]; // nombre de véhicules par type
+	int capacite[NBMAX_TYPE+1]; // capacité par type
+	double CF[NBMAX_TYPE+1]; // cout fixe par type
+	double CV[NBMAX_TYPE+1]; // cout variable par type
+	int quantite[NBMAX_CLIENT + 1]; // quantité à collecter par client
 }t_instance;
 
 typedef struct t_tournee {
-	int n;
-	int liste[NBMAX_SOMMET+1];
-	int nc;
-	int vol;
+	int nbTournee; // nombre de tournées
+	int liste[NBMAX_CLIENT_PAR_TOURNEE+1];
+	int numc; // numéro du camion affecté à la tournée
+	int vol; // volume
 	double cout;
 }t_tournee;
 
 typedef struct t_sol {
-	int n;
-	t_tournee liste[NBMAX_TOURNEE+1];
+	int nbTournee; // nombre de tournées
+	t_tournee liste[NBMAX_CLIENT_PAR_TOURNEE+1];
 	double cout;
 }t_sol;
