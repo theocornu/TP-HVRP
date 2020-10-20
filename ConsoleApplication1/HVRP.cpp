@@ -34,3 +34,12 @@ void lireDonnees(t_instance& instance, const char * nomFichier) {
 		std::cerr << "ERREUR : Ouverture du fichier impossible\n";
 	}
 }
+
+void constructionPlusProcheVoisin(t_instance & instance, t_sol & solution){
+	int nbClient = instance.nbClient;
+	int client[NBMAX_CLIENT] = { 0 };
+	int clientCour = 0;
+	for (int i = 0; i <= nbClient; i++) {
+
+	}
+}

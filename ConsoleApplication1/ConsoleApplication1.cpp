@@ -9,6 +9,7 @@ int main()
 	
 	t_instance *ptrInstance = new t_instance{0};
 	t_instance &instance = *ptrInstance;
+	t_sol solution = { 0 };
 
 	lireDonnees(instance, "HVRP_DLP_05.txt");
 	

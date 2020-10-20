@@ -1,6 +1,5 @@
 #pragma once
 
-static const int INDEX_DEPOT = 0;
 static const int NBMAX_TYPE = 10;
 static const int NBMAX_CLIENT = 500;
 static const int NBMAX_CLIENT_PAR_TOURNEE = 20;
@@ -31,4 +30,5 @@ typedef struct t_sol {
 }t_sol;
 
 void lireDonnees(t_instance& instance, const char * nomFichier);
+void constructionPlusProcheVoisin(t_instance& instance, t_sol& solution);
 bool checkSolution(t_sol& solution);
