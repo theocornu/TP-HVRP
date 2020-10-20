@@ -31,4 +31,3 @@ typedef struct t_sol {
 }t_sol;
 
 void lireDonnees(t_instance& instance, const char * nomFichier);
-bool checkSolution(t_sol& solution);
